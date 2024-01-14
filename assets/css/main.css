@@ -4,4 +4,38 @@
   box-sizing: border-box;
 }
 
+.container {
+  display: grid;
+  grid-template-rows: repeat(2, 150px);
+  grid-template-columns: repeat(2, 1fr) 2fr;
+  background-color: rgba(0, 0, 0, 0.974);
+  color: white;
+  width: 1000px;
+  margin: 30px auto;
+  grid-gap: 30px;
+}
+.container .item {
+  padding: 20px;
+  font-size: 30px;
+  color: inherit;
+}
+.container .item--1 {
+  background-color: rgba(240, 21, 21, 0.974);
+}
+.container .item--2 {
+  background-color: rgba(36, 208, 23, 0.974);
+}
+.container .item--3 {
+  background-color: rgba(21, 130, 240, 0.974);
+}
+.container .item--4 {
+  background-color: rgb(255, 166, 0);
+}
+.container .item--5 {
+  background-color: rgb(176, 221, 236);
+}
+.container .item--6 {
+  background-color: rgb(136, 224, 138);
+}
+
 /*# sourceMappingURL=main.css.map */

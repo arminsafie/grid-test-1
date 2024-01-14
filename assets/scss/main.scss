@@ -1,5 +1,52 @@
+//vars
+$clr-red:rgba(240, 21, 21, 0.974);
+$clr-blue:rgba(21, 130, 240, 0.974);
+$clr-black:rgba(0, 0, 0, 0.974);
+$clr-green:rgba(36, 208, 23, 0.974);
+$clr-w:rgba(255, 255, 255, 0.974);
+$clr-yellow:rgb(247, 255, 10);
+$clr-orange:rgb(255, 166, 0);
+$clr-green-l:rgb(136, 224, 138);
+$clr-blue-l:rgb(176, 221, 236);
+//css reset 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.container{
+  display: grid;
+  grid-template-rows: repeat(2,150px);
+  grid-template-columns: repeat(2,1fr) 2fr;
+  background-color: $clr-black;
+  color: white;
+  width: 1000px;
+  margin: 30px auto;
+  //grid-row-gap: 30px;
+  //grid-column-gap: 30px;
+  grid-gap: 30px;
+  .item{
+    padding: 20px;
+    font-size: 30px;
+    color: inherit;
+   &--1{
+    background-color: $clr-red;
+   } 
+   &--2{
+    background-color: $clr-green;
+    
+   } 
+   &--3{
+    background-color: $clr-blue;
+   } 
+   &--4{
+    background-color: $clr-orange;
+   } 
+   &--5{
+    background-color: $clr-blue-l;
+   } 
+   &--6{
+    background-color: $clr-green-l;
+   } 
+  }
 }
