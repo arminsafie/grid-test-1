@@ -7,7 +7,7 @@
 .container {
   display: grid;
   grid-template-rows: repeat(2, 150px);
-  grid-template-columns: repeat(2, 1fr) 2fr;
+  grid-template-columns: repeat(3, 1fr);
   background-color: rgba(0, 0, 0, 0.974);
   color: white;
   width: 1000px;
@@ -21,6 +21,8 @@
 }
 .container .item--1 {
   background-color: rgba(240, 21, 21, 0.974);
+  grid-row: 2/3;
+  grid-column: 2/3;
 }
 .container .item--2 {
   background-color: rgba(36, 208, 23, 0.974);
@@ -30,12 +32,16 @@
 }
 .container .item--4 {
   background-color: rgb(255, 166, 0);
+  grid-row: 1/2;
+  grid-column: 3/4;
 }
 .container .item--5 {
   background-color: rgb(176, 221, 236);
 }
 .container .item--6 {
   background-color: rgb(136, 224, 138);
+  grid-row: 1/2;
+  grid-column: 2/3;
 }
 
 /*# sourceMappingURL=main.css.map */
