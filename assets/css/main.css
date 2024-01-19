@@ -5,43 +5,32 @@
 }
 
 .container {
-  display: grid;
-  grid-template-rows: repeat(2, 150px);
-  grid-template-columns: repeat(3, 1fr);
-  background-color: rgba(0, 0, 0, 0.974);
-  color: white;
   width: 1000px;
   margin: 30px auto;
+  display: grid;
+  grid-template-rows: 100px 200px 400px 100px;
+  grid-template-columns: repeat(3, 1fr) 200px;
   grid-gap: 30px;
+  grid-template-areas: " head head head head" "box box box side" "main main main side" "footer footer footer footer ";
 }
-.container .item {
-  padding: 20px;
-  font-size: 30px;
-  color: inherit;
-}
-.container .item--1 {
-  background-color: rgba(240, 21, 21, 0.974);
-  grid-row: 2/3;
-  grid-column: 2/3;
-}
-.container .item--2 {
-  background-color: rgba(36, 208, 23, 0.974);
-}
-.container .item--3 {
+.container > * {
   background-color: rgba(21, 130, 240, 0.974);
+  color: rgba(255, 255, 255, 0.974);
+  font-size: 30px;
+  padding: 20px;
+  font-family: sans-serif;
 }
-.container .item--4 {
-  background-color: rgb(255, 166, 0);
-  grid-row: 1/2;
-  grid-column: 3/4;
+.container .heading {
+  grid-area: head;
 }
-.container .item--5 {
-  background-color: rgb(176, 221, 236);
+.container .sidebar {
+  grid-area: side;
 }
-.container .item--6 {
-  background-color: rgb(136, 224, 138);
-  grid-row: 1/2;
-  grid-column: 2/3;
+.container .main-content {
+  grid-area: main;
+}
+.container .footer {
+  grid-area: footer;
 }
 
 /*# sourceMappingURL=main.css.map */
